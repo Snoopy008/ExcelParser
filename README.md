@@ -20,9 +20,24 @@ it, simply add the following line to your Podfile:
 pod 'ExcelParser'
 ```
 
+##使用
+```
+#import "LAWExcelTool.h"
+...
+NSString *path = [[NSBundle mainBundle] pathForResource:@"test3" ofType:@"xlsx"];
+[LAWExcelTool shareInstance].delegate = self;
+[[LAWExcelTool shareInstance] parserExcelWithPath:path];
+```
+```实现代理
+- (void)parser:(LAWExcelTool *)parser success:(id)responseObj
+{
+    NSLog(@"%@",responseObj);
+}
+```
+
 ## Author
 
-984603904@qq.com, 984603904@qq.com
+984603904@qq.com
 
 ## License
 

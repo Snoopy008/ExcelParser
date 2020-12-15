@@ -7,8 +7,9 @@
 //
 
 #import "GCMViewController.h"
+#import "LAWExcelTool.h"
 
-@interface GCMViewController ()
+@interface GCMViewController ()<LAWExcelParserDelegate>
 
 @end
 
@@ -18,12 +19,20 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"test3" ofType:@"xlsx"];
+    [LAWExcelTool shareInstance].delegate = self;
+    [[LAWExcelTool shareInstance] parserExcelWithPath:path];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)parser:(LAWExcelTool *)parser success:(id)responseObj
+{
+    NSLog(@"%@",responseObj);
 }
 
 @end
