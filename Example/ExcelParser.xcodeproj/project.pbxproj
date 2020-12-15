@@ -22,6 +22,8 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		7EE047DB2588533B00315176 /* libiconv.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE047DA2588531E00315176 /* libiconv.2.tbd */; };
+		7EE047DF2588534500315176 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE047DE2588534500315176 /* libz.tbd */; };
 		80A6FEFD7AB4DCD161CDE5D0 /* Pods_ExcelParser_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FF3ED8617B7D10FB57B8DA /* Pods_ExcelParser_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -37,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07623668FA3E8591E231325E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		07623668FA3E8591E231325E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ExcelParser_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExcelParser_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,13 +61,15 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		61F439F31DA4B71516EA330C /* Pods-ExcelParser_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExcelParser_Tests.release.xcconfig"; path = "Target Support Files/Pods-ExcelParser_Tests/Pods-ExcelParser_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7EE047DA2588531E00315176 /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
+		7EE047DE2588534500315176 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9755BB0C6331F25D58147F0D /* Pods_ExcelParser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExcelParser_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC073578AC8D72F05D3CC84 /* Pods-ExcelParser_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExcelParser_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ExcelParser_Tests/Pods-ExcelParser_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A0FF3ED8617B7D10FB57B8DA /* Pods_ExcelParser_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExcelParser_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2D34C213EF37AEEECCC5D91 /* ExcelParser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ExcelParser.podspec; path = ../ExcelParser.podspec; sourceTree = "<group>"; };
+		A2D34C213EF37AEEECCC5D91 /* ExcelParser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ExcelParser.podspec; path = ../ExcelParser.podspec; sourceTree = "<group>"; };
 		D98EBA1581845A41E2A46AC7 /* Pods-ExcelParser_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExcelParser_Example.debug.xcconfig"; path = "Target Support Files/Pods-ExcelParser_Example/Pods-ExcelParser_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E24DFA6508218EFD15C913AC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E24DFA6508218EFD15C913AC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F093845DFAE25D8DFC47335B /* Pods-ExcelParser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExcelParser_Example.release.xcconfig"; path = "Target Support Files/Pods-ExcelParser_Example/Pods-ExcelParser_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EE047DF2588534500315176 /* libz.tbd in Frameworks */,
+				7EE047DB2588533B00315176 /* libiconv.2.tbd in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -119,6 +125,8 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7EE047DE2588534500315176 /* libz.tbd */,
+				7EE047DA2588531E00315176 /* libiconv.2.tbd */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -193,7 +201,6 @@
 				9FC073578AC8D72F05D3CC84 /* Pods-ExcelParser_Tests.debug.xcconfig */,
 				61F439F31DA4B71516EA330C /* Pods-ExcelParser_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +266,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
