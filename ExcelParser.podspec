@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ExcelParser'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Excel解析，支持 .xls 、.xlsx 、.csv 文件'
 
 # This description is used to generate tags and improve search results.

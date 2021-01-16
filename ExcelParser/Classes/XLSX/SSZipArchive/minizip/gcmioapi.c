@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "ioapi.h"
+#include "gcmioapi.h"
 
 #if defined(_WIN32)
 #  define snprintf _snprintf
